@@ -1,4 +1,4 @@
-# [gentleman](https://github.com/h2non/gentleman)-retry [![Build Status](https://travis-ci.org/h2non/gentleman-retry.png)](https://travis-ci.org/h2non/gentleman-retry) [![GoDoc](https://godoc.org/github.com/h2non/gentleman-retry?status.svg)](https://godoc.org/github.com/h2non/gentleman-retry) [![Coverage Status](https://coveralls.io/repos/github/h2non/gentleman-retry/badge.svg?branch=master)](https://coveralls.io/github/h2non/gentleman-retry?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/h2non/gentleman-retry)](https://goreportcard.com/report/github.com/h2non/gentleman-retry)
+# [gentleman](https://github.com/h2non/gentleman)-retry [![Build Status](https://travis-ci.org/wenbubu002/gentleman-retry-wenbb.png)](https://travis-ci.org/wenbubu002/gentleman-retry-wenbb) [![GoDoc](https://godoc.org/github.com/wenbubu002/gentleman-retry-wenbb?status.svg)](https://godoc.org/github.com/wenbubu002/gentleman-retry-wenbb) [![Coverage Status](https://coveralls.io/repos/github/wenbubu002/gentleman-retry-wenbb/badge.svg?branch=master)](https://coveralls.io/github/wenbubu002/gentleman-retry-wenbb?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/wenbubu002/gentleman-retry-wenbb)](https://goreportcard.com/report/github.com/wenbubu002/gentleman-retry-wenbb)
 
 [gentleman](https://github.com/h2non/gentleman)'s v2 plugin providing retry policy capabilities to your HTTP clients.
 
@@ -14,17 +14,17 @@ interface which acts like a proxy to `http.Transport`, in order to take full con
 ## Installation
 
 ```bash
-go get -u gopkg.in/h2non/gentleman-retry.v2
+go get -u gopkg.in/wenbubu002/gentleman-retry-wenbb.v2
 ```
 
 ## Versions
 
-- **[v1](https://github.com/h2non/gentleman-retry/tree/v1)** - First version, uses `gentleman@v1`.
-- **[v2](https://github.com/h2non/gentleman-retry/tree/master)** - Latest version, uses `gentleman@v2`.
+- **[v1](https://github.com/wenbubu002/gentleman-retry-wenbb/tree/v1)** - First version, uses `gentleman@v1`.
+- **[v2](https://github.com/wenbubu002/gentleman-retry-wenbb/tree/master)** - Latest version, uses `gentleman@v2`.
 
 ## API
 
-See [godoc reference](https://godoc.org/github.com/h2non/gentleman-retry) for detailed API documentation.
+See [godoc reference](https://godoc.org/github.com/wenbubu002/gentleman-retry-wenbb) for detailed API documentation.
 
 ## Examples
 
@@ -37,7 +37,7 @@ import (
   "fmt"
 
   "gopkg.in/h2non/gentleman.v2"
-  "gopkg.in/h2non/gentleman-retry.v2"
+  "gopkg.in/wenbubu002/gentleman-retry-wenbb.v2"
 )
 
 func main() {
@@ -75,6 +75,7 @@ func main() {
 #### Exponential retry strategy
 
 I would recommend you using [go-resiliency](https://github.com/eapache/go-resiliency/tree/master/retrier) package for custom retry estrategies:
+
 ```go
 go get -u gopkg.in/eapache/go-resiliency.v1/retrier
 ```
@@ -87,7 +88,7 @@ import (
   "time"
 
   "gopkg.in/h2non/gentleman.v2"
-  "gopkg.in/h2non/gentleman-retry.v2"
+  "gopkg.in/wenbubu002/gentleman-retry-wenbb.v2"
   "gopkg.in/eapache/go-resiliency.v1/retrier"
 
 )
